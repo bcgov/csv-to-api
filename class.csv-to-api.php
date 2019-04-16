@@ -201,7 +201,6 @@ class CSV_To_API {
         $row[ $this->sanitize_key( $headers[ $key ] ) ] = $field;
       }
 
-      $row = array_filter( $row );
       $row = $this->array_to_object( $row );
       $data[] = $row;
 
